@@ -10,6 +10,8 @@
         window.close()
     }
     document.getElementById('btnYes').onclick = function() {
-        window.open("www.bilibili.com")
+        window.open("https://www.bilibili.com")
+        window.opener = null
+        window.close()
     }
 </script>
