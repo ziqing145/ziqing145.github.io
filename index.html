@@ -1,6 +1,6 @@
 <body>
     <p>是否跳转到b站?</p>
-    <button onclick='window:open("www.bilibili.com")' id="btnYes">是</button>
+    <button id="btnYes">是</button>
     <button id="btnNo">否</button>
 </body>
 
@@ -8,5 +8,8 @@
     document.getElementById('btnNo').onclick = function() {
         window.opener = null
         window.close()
+    }
+    document.getElementById('btnYes').onclick = function() {
+        window.open("www.bilibili.com")
     }
 </script>
